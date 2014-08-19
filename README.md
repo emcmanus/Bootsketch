@@ -7,11 +7,17 @@ Includes jquery and bootstrap with the [lumen](http://bootswatch.com/lumen/) the
 
 Run `grunt` to spin up a static web server. Changes to `src` propagate to the browser using livereload.
 
-#### Setup
+#### Setup (Fish Shell)
 
+    set -x YourProjectName ChangeMe
+    git clone git@github.com:emcmanus/Bootsketch.git $YourProjectName
+    cd $YourProjectName
     npm install
     bower install
     grunt
+    open http://localhost:8000
+    rm README.md
+    git remote rm origin
 
 #### Files
 
